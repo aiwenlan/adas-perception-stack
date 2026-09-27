@@ -1,0 +1,13 @@
+{
+  "model": "VAD-tiny",
+  "dataset": "nuScenes mini-filtered (VAD temporal infos)",
+  "metrics": {
+    "plan_L2_1s": 0.405,
+    "plan_L2_2s": 0.637,
+    "plan_L2_3s": 0.913
+  },
+  "det_ref": {"mAP": 0.266, "NDS": 0.359},
+  "evidence_level": "B",
+  "visualizations": ["assets/vad/vad_showcase.png"],
+  "note": "open-loop planning L2; not closed-loop safety"
+}

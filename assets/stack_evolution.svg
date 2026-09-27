@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f766e"/><stop offset="100%" stop-color="#115e59"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1d4ed8"/><stop offset="100%" stop-color="#1e3a8a"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#92400e"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker>
+    <style>
+      .t{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#0f172a;font-size:14px}
+      .h{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#fff;font-size:15px;font-weight:700}
+      .s{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#334155;font-size:12px}
+    </style>
+  </defs>
+  <rect width="920" height="520" fill="#f8fafc"/>
+  <text x="28" y="36" class="t" style="font-size:20px;font-weight:700">Autonomous driving stack evolution (simplified)</text>
+  <rect x="40" y="60" width="200" height="70" rx="10" fill="#e2e8f0" stroke="#0f172a22"/>
+  <text x="60" y="90" class="t" style="font-weight:700">传统 L2</text>
+  <text x="60" y="112" class="s">2D Det / Track / Fusion / Rule</text>
+  <path d="M140 130 v28" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="40" y="170" width="260" height="80" rx="10" fill="url(#g1)"/>
+  <text x="58" y="200" class="h">3D Det 双路线</text>
+  <text x="58" y="222" class="h" style="font-size:12px;font-weight:500">CenterPoint · StreamPETR</text>
+  <text x="58" y="240" class="h" style="font-size:11px;font-weight:400;fill:#ccfbf1">点云几何 / 相机 sparse query</text>
+  <path d="M170 250 v28" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="40" y="290" width="260" height="70" rx="10" fill="url(#g2)"/>
+  <text x="58" y="320" class="h">BEV 表征 · BEVFormer</text>
+  <text x="58" y="342" class="h" style="font-size:11px;font-weight:400;fill:#dbeafe">Temporal SA + Spatial CA</text>
+  <path d="M300 325 h40" stroke="#64748b" stroke-width="2"/>
+  <rect x="350" y="250" width="200" height="54" rx="10" fill="#0ea5e9"/><text x="368" y="282" class="h" style="font-size:13px">BEVFusion 多模态</text>
+  <rect x="350" y="316" width="200" height="54" rx="10" fill="#6366f1"/><text x="368" y="348" class="h" style="font-size:13px">MapTR 在线矢量地图</text>
+  <rect x="350" y="382" width="200" height="54" rx="10" fill="#d97706"/><text x="368" y="414" class="h" style="font-size:13px">FB-OCC Occupancy</text>
+  <path d="M170 360 v28" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="40" y="400" width="260" height="70" rx="10" fill="url(#g3)"/>
+  <text x="58" y="430" class="h">E2E · VAD / UniAD</text>
+  <text x="58" y="452" class="h" style="font-size:11px;font-weight:400;fill:#ffedd5">→ VLM DriveLM → VLA(Occ桥)</text>
+  <rect x="600" y="170" width="280" height="250" rx="12" fill="#fff" stroke="#cbd5e1"/>
+  <text x="620" y="200" class="t" style="font-weight:700">Modules covered in this repo</text>
+  <text x="620" y="230" class="s">1. CenterPoint</text>
+  <text x="620" y="252" class="s">2. BEVFormer-small (tiny as light baseline)</text>
+  <text x="620" y="274" class="s">3. StreamPETR-R50</text>
+  <text x="620" y="296" class="s">4. BEVFusion</text>
+  <text x="620" y="318" class="s">5. FB-OCC-R50</text>
+  <text x="620" y="340" class="s">6. VAD-tiny + MapTR</text>
+  <text x="620" y="362" class="s">7. DriveLM + OpenDriveVLA</text>
+  <text x="620" y="392" class="s">+ online LiDAR/Cam 3D MOT</text>
+</svg>

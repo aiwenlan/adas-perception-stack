@@ -1,0 +1,212 @@
+[
+  {
+    "id": "mini_sample_0",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat are the important objects in the current scene?"
+      },
+      {
+        "from": "gpt",
+        "value": "There are vehicles and road elements around the ego vehicle."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_1",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the ego vehicle on a road?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_2",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat should the ego vehicle pay attention to ahead?"
+      },
+      {
+        "from": "gpt",
+        "value": "Traffic participants and lane markings ahead."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_3",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs there a vehicle visible in the front camera view?"
+      },
+      {
+        "from": "gpt",
+        "value": "Possibly; inspect CAM_FRONT carefully."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_4",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDescribe the driving scene briefly."
+      },
+      {
+        "from": "gpt",
+        "value": "An urban/suburban driving scene from nuScenes mini."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_5",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nShould the ego vehicle stop immediately?"
+      },
+      {
+        "from": "gpt",
+        "value": "Not necessarily; depends on traffic lights and obstacles."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_6",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat camera views are provided?"
+      },
+      {
+        "from": "gpt",
+        "value": "Six surrounding cameras."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_7",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this an indoor scene?"
+      },
+      {
+        "from": "gpt",
+        "value": "No, it is an outdoor driving scene."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_8",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWhat is the weather roughly like?"
+      },
+      {
+        "from": "gpt",
+        "value": "Typical outdoor lighting as in nuScenes samples."
+      }
+    ]
+  },
+  {
+    "id": "mini_sample_9",
+    "image": [
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT/n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984243412460.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_LEFT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_LEFT__1538984243404844.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_FRONT_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_FRONT_RIGHT__1538984243420339.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK/n015-2018-10-08-15-36-50+0800__CAM_BACK__1538984243437525.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_LEFT/n015-2018-10-08-15-36-50+0800__CAM_BACK_LEFT__1538984243447423.jpg",
+      "$AD_ROOT/data/nuscenes/samples/CAM_BACK_RIGHT/n015-2018-10-08-15-36-50+0800__CAM_BACK_RIGHT__1538984243427893.jpg"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGive one safe driving action."
+      },
+      {
+        "from": "gpt",
+        "value": "Keep lane and maintain safe following distance."
+      }
+    ]
+  }
+]

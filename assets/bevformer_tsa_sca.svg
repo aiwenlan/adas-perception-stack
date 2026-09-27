@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+  <rect width="960" height="420" fill="#f8fafc"/>
+  <style>.t{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#0f172a}.h{fill:#fff;font-weight:700;font-family:Segoe UI,Helvetica,Arial,sans-serif}.s{fill:#334155;font-size:12px;font-family:Segoe UI,Helvetica,Arial,sans-serif}</style>
+  <text x="24" y="32" class="t" style="font-size:18px;font-weight:700">BEVFormer：Temporal SA + Spatial CA</text>
+  <rect x="30" y="60" width="160" height="70" rx="10" fill="#1e40af"/><text x="48" y="100" class="h">Images 6 cams</text>
+  <path d="M190 95 H230" stroke="#64748b" stroke-width="2"/>
+  <rect x="230" y="60" width="150" height="70" rx="10" fill="#2563eb"/><text x="248" y="100" class="h">Backbone+FPN</text>
+  <rect x="30" y="180" width="180" height="70" rx="10" fill="#0f766e"/><text x="48" y="210" class="h">BEV Queries</text><text x="48" y="230" class="h" style="font-size:11px;font-weight:500">50×50 · C</text>
+  <rect x="250" y="170" width="200" height="90" rx="10" fill="#b45309"/><text x="270" y="205" class="h">Temporal SA</text><text x="270" y="228" class="h" style="font-size:11px;font-weight:400">Hist BEV + Ego Motion</text>
+  <path d="M210 215 H250" stroke="#64748b" stroke-width="2"/>
+  <rect x="500" y="150" width="220" height="130" rx="10" fill="#7c3aed"/><text x="520" y="185" class="h">Spatial CA</text><text x="520" y="208" class="h" style="font-size:11px;font-weight:400">3D Ref → project cams</text><text x="520" y="228" class="h" style="font-size:11px;font-weight:400">Deformable sample</text><text x="520" y="248" class="h" style="font-size:11px;font-weight:400">Update BEV Query</text>
+  <path d="M450 215 H500" stroke="#64748b" stroke-width="2"/>
+  <path d="M380 95 V170 H500" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M720 215 H760" stroke="#64748b" stroke-width="2"/>
+  <rect x="760" y="180" width="160" height="70" rx="10" fill="#be123c"/><text x="780" y="220" class="h">3D Boxes</text>
+  <text x="30" y="320" class="s">TSA：历史 BEV 必须先做 Ego Motion Compensation，不能直接相加。</text>
+  <text x="30" y="342" class="s">SCA：Reference 在 Ego 3D，投影到可见相机后 deformable 采样，多相机特征聚合回 BEV。</text>
+  <text x="30" y="364" class="s">tiny: bev_h=bev_w=50, queue_length=3, num_query=900; mini_val mAP 0.265 / NDS 0.326.</text>
+</svg>

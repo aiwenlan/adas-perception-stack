@@ -1,0 +1,3 @@
+# gated ckpt + UniAD tower + scene cache; see REPRO.md
+# inference-only on 4 mini samples → viz cards
+bash $AD_ROOT/scripts/viz_opendrivevla.sh

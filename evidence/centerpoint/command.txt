@@ -1,0 +1,8 @@
+conda activate streampetr
+cd $AD_ROOT/repos/StreamPETR/mmdetection3d
+export PYTHONPATH=$PWD:${PYTHONPATH:-}
+python tools/test.py \
+  configs/centerpoint/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus.py \
+  $AD_ROOT/ckpts/centerpoint/centerpoint_01voxel_second_secfpn_circlenms_4x8_cyclic_20e_nus.pth \
+  --eval bbox \
+  --out $AD_ROOT/outputs/centerpoint/results.pkl

@@ -1,0 +1,15 @@
+{
+  "model": "FB-OCC-R50",
+  "dataset": "Occ3D-nuScenes mini",
+  "sample_count": 81,
+  "gt_labels_npz_count": 404,
+  "metrics": {"mIoU": 31.12},
+  "mask": "mask_camera",
+  "evidence_level": "B",
+  "visualizations": [
+    "assets/fbocc/sample_1_pred_vs_gt.png",
+    "assets/fbocc/sample_1_zslices.png",
+    "assets/fbocc/sample_1_occ_only.png"
+  ],
+  "viz_note": "denoise / majority-Z / display flip are viz-only; mIoU from raw evaluator"
+}

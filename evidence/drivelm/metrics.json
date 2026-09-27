@@ -1,0 +1,8 @@
+{
+  "model": "DriveLM BIAS-7B",
+  "dataset": "mini demo QA (10 prompts)",
+  "metrics": {"non_empty_generations": "10/10"},
+  "evidence_level": "C",
+  "visualizations": ["assets/drivelm/drivelm_qa_card.png"],
+  "warning": "10/10 non-empty is NOT accuracy"
+}

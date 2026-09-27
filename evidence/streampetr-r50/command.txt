@@ -1,0 +1,8 @@
+conda activate streampetr
+cd $AD_ROOT/repos/StreamPETR
+export PYTHONPATH=$PWD:$PWD/mmdetection3d:${PYTHONPATH:-}
+python tools/test.py \
+  projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_90e.py \
+  ckpts/stream_petr_r50_flash_704_bs2_seq_90e.pth \
+  --eval bbox \
+  --out $AD_ROOT/outputs/streampetr-r50/results.pkl

@@ -1,0 +1,32 @@
+diff --git a/tools/test.py b/tools/test.py
+index fd2cf45..9eb82ee 100644
+--- a/tools/test.py
++++ b/tools/test.py
+@@ -222,9 +222,15 @@ def main():
+         model.PALETTE = dataset.PALETTE
+ 
+     if not distributed:
+-        assert False
+-        # model = MMDataParallel(model, device_ids=[0])
+-        # outputs = single_gpu_test(model, data_loader, args.show, args.show_dir)
++        from mmcv.parallel import MMDataParallel
++        from mmdet.apis import single_gpu_test
++        # MapTR custom: prefer plugin single_gpu if present
++        try:
++            from projects.mmdet3d_plugin.apis.test import custom_single_gpu_test as single_gpu_test
++        except Exception:
++            pass
++        model = MMDataParallel(model, device_ids=[0])
++        outputs = single_gpu_test(model, data_loader, args.show, args.show_dir)
+     else:
+         model = MMDistributedDataParallel(
+             model.cuda(),
+@@ -237,7 +243,7 @@ def main():
+     if rank == 0:
+         if args.out:
+             print(f'\nwriting results to {args.out}')
+-            assert False
++            mmcv.dump(outputs, args.out)
+             #mmcv.dump(outputs['bbox_results'], args.out)
+         kwargs = {} if args.eval_options is None else args.eval_options
+         kwargs['jsonfile_prefix'] = osp.join('test', args.config.split(

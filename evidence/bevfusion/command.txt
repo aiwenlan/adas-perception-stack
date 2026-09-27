@@ -1,0 +1,8 @@
+conda activate bevfusion
+cd $AD_ROOT/repos/BEVFusion
+# lidar-only control
+python tools/test.py configs/nuscenes/det/transfusion/secfpn/lidar/voxelnet_0p075.yaml \
+  pretrained/lidar-only-det.pth --eval bbox | tee eval-lidar.log
+# camera+lidar
+python tools/test.py configs/nuscenes/det/transfusion/secfpn/camera+lidar/swint_v0p075/convfuser.yaml \
+  pretrained/bevfusion-det.pth --eval bbox | tee eval-fusion.log

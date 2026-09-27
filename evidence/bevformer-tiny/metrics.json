@@ -1,0 +1,8 @@
+{
+  "model": "BEVFormer-tiny",
+  "dataset": "nuScenes v1.0-mini val",
+  "sample_count": 81,
+  "metrics": {"mAP": 0.2649, "NDS": 0.3255},
+  "evidence_level": "B",
+  "role": "lightweight control vs small; not primary showcase"
+}

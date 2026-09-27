@@ -1,0 +1,7 @@
+conda activate fbocc
+cd $AD_ROOT/repos/FB-BEV
+python tools/test.py \
+  occupancy_configs/fb_occ/fbocc-r50-cbgs_depth_16f_16x4_20e.py \
+  $AD_ROOT/ckpts/fbocc/fbocc-r50-cbgs_depth_16f_16x4_20e.pth \
+  --eval occupancy --launcher none \
+  --out $AD_ROOT/outputs/fbocc/results_miou.pkl

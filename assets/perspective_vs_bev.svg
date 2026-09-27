@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <style>.t{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#0f172a}.s{fill:#475569;font-size:13px;font-family:Segoe UI,Helvetica,Arial,sans-serif}</style>
+  <text x="24" y="32" class="t" style="font-size:18px;font-weight:700">透视相机空间 vs BEV 统一平面</text>
+  <rect x="40" y="60" width="380" height="260" rx="12" fill="#fff" stroke="#cbd5e1"/>
+  <text x="60" y="90" class="t" style="font-weight:700">Camera（透视）</text>
+  <!-- frustum: bottom near, top far -->
+  <polygon points="120,280 220,140 280,140 380,280" fill="none" stroke="#64748b" stroke-width="2"/>
+  <!-- red = far: small + high -->
+  <circle cx="235" cy="165" r="8" fill="#ef4444"/>
+  <text x="248" y="160" class="s" style="font-size:11px;fill:#ef4444">远</text>
+  <!-- blue = near: large + low -->
+  <circle cx="300" cy="245" r="18" fill="#3b82f6"/>
+  <text x="322" y="250" class="s" style="font-size:11px;fill:#3b82f6">近</text>
+  <text x="60" y="310" class="s">远小近大 · 多相机坐标不统一 · 规划不直观</text>
+  <rect x="460" y="60" width="400" height="260" rx="12" fill="#fff" stroke="#cbd5e1"/>
+  <text x="480" y="90" class="t" style="font-weight:700">BEV（鸟瞰 · ↑前 →右）</text>
+  <rect x="520" y="120" width="280" height="160" fill="#ecfeff" stroke="#0891b2"/>
+  <!-- ego at bottom = near -->
+  <rect x="640" y="230" width="28" height="40" rx="4" fill="#0f766e"/>
+  <text x="632" y="290" class="s">Ego</text>
+  <text x="670" y="248" class="s" style="font-size:11px">↑前</text>
+  <!-- same metric size; red far-left (higher), blue near-right (lower) -->
+  <circle cx="580" cy="145" r="10" fill="#ef4444"/>
+  <text x="548" y="140" class="s" style="font-size:11px;fill:#ef4444">远</text>
+  <circle cx="720" cy="210" r="10" fill="#3b82f6"/>
+  <text x="734" y="214" class="s" style="font-size:11px;fill:#3b82f6">近</text>
+  <line x1="520" y1="200" x2="800" y2="200" stroke="#94a3b8" stroke-dasharray="4 4"/>
+  <text x="480" y="310" class="s">统一度量 · 多传感器可对齐 · 规划友好</text>
+</svg>

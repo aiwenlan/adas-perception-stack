@@ -1,0 +1,236 @@
+===== Sat Sep 26 11:56:52 UTC 2026 Occ3D extract + FB-OCC mIoU =====
+extracting gts.tar.gz...
+labels.npz count=404
+total 27500
+drwxr-xr-x  3 root root     4096 Sep 26 11:55 .
+drwxr-xr-x  6 root root     4096 Sep 26 06:03 ..
+-rw-r--r--  1 root root  1780889 Sep 26 11:55 annotations.json
+drwxr-xr-x 12 1144 1024     4096 Feb 22  2023 gts
+-rw-r--r--  1 root root 26362564 Sep 26 11:55 gts.tar.gz
+True False
+occupancy_path OK
+class LoadOccupancy(object):
+    """Load an image from file in monocular 3D object detection. Compared to 2D
+    detection, additional camera parameters need to be loaded.
+
+    Args:
+        kwargs (dict): Arguments are the same as those in
+            :class:`LoadImageFromFile`.
+    """
+
+    def __init__(self, occupancy_path='/mount/dnn_data/occupancy_2023/gts',
+                    num_classes=17,
+                    ignore_nonvisible=False,
+                    mask='mask_camera',
+                    ignore_classes=[],
+                    fix_void=True) :
+        self.occupancy_path = occupancy_path
+        self.num_classes = num_classes
+        self.ignore_nonvisible = ignore_nonvisible
+        self.mask = mask
+
+        self.ignore_classes=ignore_classes
+
+        self.fix_void = fix_void
+
+
+    def __call__(self, results):
+        """Call functions to load image and get image meta information.
+
+        Args:
+            results (dict): Result dict from :obj:`mmdet.CustomDataset`.
+
+        Returns:
+            dict: The dict contains loaded image and meta information.
+        """
+
+        scene_name = results['curr']['scene_name']
+        sample_token = results['curr']['token']
+
+
+        occupancy_file_path = osp.join(self.occupancy_path, scene_name, sample_token, 'labels.npz')
+        # SOFT_FAIL_OCC_V1: dummy zeros if Occ3D gts not downloaded
+        if not osp.exists(occupancy_file_path):
+            occupancy = torch.zeros((200, 200, 16), dtype=torch.uint8)
+            vi
+soft-fail markers present — attempting restore of FileNotFoundError path
+found np.zeros near occupancy — checking
+loading.py size 54669
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmdet/utils/setup_env.py:38: UserWarning: Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmdet/utils/setup_env.py:48: UserWarning: Setting MKL_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmdet/models/backbones/resnet.py:401: UserWarning: DeprecationWarning: pretrained is deprecated, please use "init_cfg" instead
+  warnings.warn('DeprecationWarning: pretrained is deprecated, '
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/custom_base_transformer_layer.py:94: UserWarning: The arguments `feedforward_channels` in BaseTransformerLayer has been deprecated, now you should set `feedforward_channels` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/custom_base_transformer_layer.py:94: UserWarning: The arguments `ffn_dropout` in BaseTransformerLayer has been deprecated, now you should set `ffn_drop` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/custom_base_transformer_layer.py:94: UserWarning: The arguments `ffn_num_fcs` in BaseTransformerLayer has been deprecated, now you should set `num_fcs` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmcv/ops/multi_scale_deform_attn.py:209: UserWarning: You'd better set embed_dims in MultiScaleDeformAttention to make the dimension of each attention head a power of 2 which is more efficient in our CUDA implementation.
+  warnings.warn(
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/spatial_cross_attention_depth.py:421: UserWarning: You'd better set embed_dims in MultiScaleDeformAttention to make the dimension of each attention head a power of 2 which is more efficient in our CUDA implementation.
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/torch/functional.py:478: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2894.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+load checkpoint from local path: $AD_ROOT/repos/FB-BEV/ckpts/fbocc/fbocc-r50-cbgs_depth_16f_16x4_20e.pth
+Traceback (most recent call last):
+  File "tools/test.py", line 325, in <module>
+    main()
+  File "tools/test.py", line 253, in main
+    checkpoint = load_checkpoint(model, args.checkpoint, map_location='cpu', revise_keys=[(r'^module\.', ''), (r'^teacher\.', '')])
+  File "/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmcv/runner/checkpoint.py", line 581, in load_checkpoint
+    checkpoint = _load_checkpoint(filename, map_location, logger)
+  File "/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmcv/runner/checkpoint.py", line 520, in _load_checkpoint
+    return CheckpointLoader.load_checkpoint(filename, map_location, logger)
+  File "/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmcv/runner/checkpoint.py", line 285, in load_checkpoint
+    return checkpoint_loader(filename, map_location)
+  File "/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmcv/runner/checkpoint.py", line 301, in load_from_local
+    raise FileNotFoundError(f'{filename} can not be found.')
+FileNotFoundError: $AD_ROOT/repos/FB-BEV/ckpts/fbocc/fbocc-r50-cbgs_depth_16f_16x4_20e.pth can not be found.
+===== Sat Sep 26 11:58:53 UTC 2026 Occ3D extract + FB-OCC mIoU =====
+extracting gts.tar.gz...
+labels.npz count=404
+total 27500
+drwxr-xr-x  3 root root     4096 Sep 26 11:55 .
+drwxr-xr-x  6 root root     4096 Sep 26 06:03 ..
+-rw-r--r--  1 root root  1780889 Sep 26 11:55 annotations.json
+drwxr-xr-x 12 1144 1024     4096 Feb 22  2023 gts
+-rw-r--r--  1 root root 26362564 Sep 26 11:55 gts.tar.gz
+True False
+occupancy_path OK
+class LoadOccupancy(object):
+    """Load an image from file in monocular 3D object detection. Compared to 2D
+    detection, additional camera parameters need to be loaded.
+
+    Args:
+        kwargs (dict): Arguments are the same as those in
+            :class:`LoadImageFromFile`.
+    """
+
+    def __init__(self, occupancy_path='/mount/dnn_data/occupancy_2023/gts',
+                    num_classes=17,
+                    ignore_nonvisible=False,
+                    mask='mask_camera',
+                    ignore_classes=[],
+                    fix_void=True) :
+        self.occupancy_path = occupancy_path
+        self.num_classes = num_classes
+        self.ignore_nonvisible = ignore_nonvisible
+        self.mask = mask
+
+        self.ignore_classes=ignore_classes
+
+        self.fix_void = fix_void
+
+
+    def __call__(self, results):
+        """Call functions to load image and get image meta information.
+
+        Args:
+            results (dict): Result dict from :obj:`mmdet.CustomDataset`.
+
+        Returns:
+            dict: The dict contains loaded image and meta information.
+        """
+
+        scene_name = results['curr']['scene_name']
+        sample_token = results['curr']['token']
+
+
+        occupancy_file_path = osp.join(self.occupancy_path, scene_name, sample_token, 'labels.npz')
+        # SOFT_FAIL_OCC_V1: dummy zeros if Occ3D gts not downloaded
+        if not osp.exists(occupancy_file_path):
+            occupancy = torch.zeros((200, 200, 16), dtype=torch.uint8)
+            vi
+soft-fail markers present — attempting restore of FileNotFoundError path
+found np.zeros near occupancy — checking
+loading.py size 54669
+load checkpoint from local path: $AD_ROOT/ckpts/fbocc/fbocc-r50-cbgs_depth_16f_16x4_20e.pth
+The model and loaded state dict do not match exactly
+
+unexpected key in source state_dict: img_sem_seg_head.seg_net.0.weight, img_sem_seg_head.seg_net.0.bias, img_sem_seg_head.seg_net.3.weight, img_sem_seg_head.seg_net.3.bias
+
+[                                                  ] 0/81, elapsed: 0s, ETA:/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmdet/utils/setup_env.py:38: UserWarning: Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmdet/utils/setup_env.py:48: UserWarning: Setting MKL_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmdet/models/backbones/resnet.py:401: UserWarning: DeprecationWarning: pretrained is deprecated, please use "init_cfg" instead
+  warnings.warn('DeprecationWarning: pretrained is deprecated, '
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/custom_base_transformer_layer.py:94: UserWarning: The arguments `feedforward_channels` in BaseTransformerLayer has been deprecated, now you should set `feedforward_channels` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/custom_base_transformer_layer.py:94: UserWarning: The arguments `ffn_dropout` in BaseTransformerLayer has been deprecated, now you should set `ffn_drop` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/custom_base_transformer_layer.py:94: UserWarning: The arguments `ffn_num_fcs` in BaseTransformerLayer has been deprecated, now you should set `num_fcs` and other FFN related arguments to a dict named `ffn_cfgs`. 
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/mmcv/ops/multi_scale_deform_attn.py:209: UserWarning: You'd better set embed_dims in MultiScaleDeformAttention to make the dimension of each attention head a power of 2 which is more efficient in our CUDA implementation.
+  warnings.warn(
+$AD_ROOT/repos/FB-BEV/mmdet3d/models/fbbev/view_transformation/backward_projection/bevformer_utils/spatial_cross_attention_depth.py:421: UserWarning: You'd better set embed_dims in MultiScaleDeformAttention to make the dimension of each attention head a power of 2 which is more efficient in our CUDA implementation.
+  warnings.warn(
+/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/torch/functional.py:478: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2894.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+[                                  ] 1/81, 0.2 task/s, elapsed: 4s, ETA:   355s[                                  ] 2/81, 0.4 task/s, elapsed: 5s, ETA:   180s[>                                 ] 3/81, 0.6 task/s, elapsed: 5s, ETA:   122s[>                                 ] 4/81, 0.8 task/s, elapsed: 5s, ETA:    93s[>>                                ] 5/81, 1.0 task/s, elapsed: 5s, ETA:    75s[>>                                ] 6/81, 1.2 task/s, elapsed: 5s, ETA:    63s[>>                                ] 7/81, 1.4 task/s, elapsed: 5s, ETA:    55s[>>>                               ] 8/81, 1.5 task/s, elapsed: 5s, ETA:    49s[>>>                               ] 9/81, 1.6 task/s, elapsed: 5s, ETA:    44s[>>>>                             ] 10/81, 1.8 task/s, elapsed: 6s, ETA:    40s[>>>>                             ] 11/81, 1.9 task/s, elapsed: 6s, ETA:    36s[>>>>                             ] 12/81, 2.1 task/s, elapsed: 6s, ETA:    33s[>>>>>                            ] 13/81, 2.2 task/s, elapsed: 6s, ETA:    31s[>>>>>                            ] 14/81, 2.3 task/s, elapsed: 6s, ETA:    29s[>>>>>>                           ] 15/81, 2.4 task/s, elapsed: 6s, ETA:    27s[>>>>>>                           ] 16/81, 2.5 task/s, elapsed: 6s, ETA:    26s[>>>>>>                           ] 17/81, 2.6 task/s, elapsed: 6s, ETA:    24s[>>>>>>>                          ] 18/81, 2.7 task/s, elapsed: 7s, ETA:    23s[>>>>>>>                          ] 19/81, 2.8 task/s, elapsed: 7s, ETA:    22s[>>>>>>>>                         ] 20/81, 2.9 task/s, elapsed: 7s, ETA:    21s[>>>>>>>>                         ] 21/81, 3.0 task/s, elapsed: 7s, ETA:    20s[>>>>>>>>                         ] 22/81, 3.1 task/s, elapsed: 7s, ETA:    19s[>>>>>>>>>                        ] 23/81, 3.2 task/s, elapsed: 7s, ETA:    18s[>>>>>>>>>                        ] 24/81, 3.3 task/s, elapsed: 7s, ETA:    17s[>>>>>>>>>>                       ] 25/81, 3.4 task/s, elapsed: 7s, ETA:    17s[>>>>>>>>>>                       ] 26/81, 3.4 task/s, elapsed: 8s, ETA:    16s[>>>>>>>>>>>                      ] 27/81, 3.5 task/s, elapsed: 8s, ETA:    15s[>>>>>>>>>>>                      ] 28/81, 3.6 task/s, elapsed: 8s, ETA:    15s[>>>>>>>>>>>                      ] 29/81, 3.6 task/s, elapsed: 8s, ETA:    14s[>>>>>>>>>>>>                     ] 30/81, 3.7 task/s, elapsed: 8s, ETA:    14s[>>>>>>>>>>>>                     ] 31/81, 3.8 task/s, elapsed: 8s, ETA:    13s[>>>>>>>>>>>>>                    ] 32/81, 3.8 task/s, elapsed: 8s, ETA:    13s[>>>>>>>>>>>>>                    ] 33/81, 3.9 task/s, elapsed: 9s, ETA:    12s[>>>>>>>>>>>>>                    ] 34/81, 3.9 task/s, elapsed: 9s, ETA:    12s[>>>>>>>>>>>>>>                   ] 35/81, 4.0 task/s, elapsed: 9s, ETA:    12s[>>>>>>>>>>>>>>                   ] 36/81, 4.0 task/s, elapsed: 9s, ETA:    11s[>>>>>>>>>>>>>>>                  ] 37/81, 4.1 task/s, elapsed: 9s, ETA:    11s[>>>>>>>>>>>>>>>                  ] 38/81, 4.1 task/s, elapsed: 9s, ETA:    10s[>>>>>>>>>>>>>>>                  ] 39/81, 4.2 task/s, elapsed: 9s, ETA:    10s[>>>>>>>>>>>>>>>>                 ] 40/81, 4.2 task/s, elapsed: 9s, ETA:    10s[>>>>>>>>>>>>>>>>                ] 41/81, 4.3 task/s, elapsed: 10s, ETA:     9s[>>>>>>>>>>>>>>>>                ] 42/81, 4.3 task/s, elapsed: 10s, ETA:     9s[>>>>>>>>>>>>>>>>                ] 43/81, 4.4 task/s, elapsed: 10s, ETA:     9s[>>>>>>>>>>>>>>>>>               ] 44/81, 4.4 task/s, elapsed: 10s, ETA:     8s[>>>>>>>>>>>>>>>>>               ] 45/81, 4.5 task/s, elapsed: 10s, ETA:     8s[>>>>>>>>>>>>>>>>>>              ] 46/81, 4.5 task/s, elapsed: 10s, ETA:     8s[>>>>>>>>>>>>>>>>>>              ] 47/81, 4.5 task/s, elapsed: 10s, ETA:     7s[>>>>>>>>>>>>>>>>>>              ] 48/81, 4.6 task/s, elapsed: 10s, ETA:     7s[>>>>>>>>>>>>>>>>>>>             ] 49/81, 4.6 task/s, elapsed: 11s, ETA:     7s[>>>>>>>>>>>>>>>>>>>             ] 50/81, 4.7 task/s, elapsed: 11s, ETA:     7s[>>>>>>>>>>>>>>>>>>>>            ] 51/81, 4.7 task/s, elapsed: 11s, ETA:     6s[>>>>>>>>>>>>>>>>>>>>            ] 52/81, 4.7 task/s, elapsed: 11s, ETA:     6s[>>>>>>>>>>>>>>>>>>>>            ] 53/81, 4.8 task/s, elapsed: 11s, ETA:     6s[>>>>>>>>>>>>>>>>>>>>>           ] 54/81, 4.8 task/s, elapsed: 11s, ETA:     6s[>>>>>>>>>>>>>>>>>>>>>           ] 55/81, 4.8 task/s, elapsed: 11s, ETA:     5s[>>>>>>>>>>>>>>>>>>>>>>          ] 56/81, 4.9 task/s, elapsed: 12s, ETA:     5s[>>>>>>>>>>>>>>>>>>>>>>          ] 57/81, 4.9 task/s, elapsed: 12s, ETA:     5s[>>>>>>>>>>>>>>>>>>>>>>          ] 58/81, 4.9 task/s, elapsed: 12s, ETA:     5s[>>>>>>>>>>>>>>>>>>>>>>>         ] 59/81, 5.0 task/s, elapsed: 12s, ETA:     4s[>>>>>>>>>>>>>>>>>>>>>>>         ] 60/81, 5.0 task/s, elapsed: 12s, ETA:     4s[>>>>>>>>>>>>>>>>>>>>>>>>        ] 61/81, 5.0 task/s, elapsed: 12s, ETA:     4s[>>>>>>>>>>>>>>>>>>>>>>>>        ] 62/81, 5.1 task/s, elapsed: 12s, ETA:     4s[>>>>>>>>>>>>>>>>>>>>>>>>        ] 63/81, 5.1 task/s, elapsed: 12s, ETA:     4s[>>>>>>>>>>>>>>>>>>>>>>>>>       ] 64/81, 5.1 task/s, elapsed: 13s, ETA:     3s[>>>>>>>>>>>>>>>>>>>>>>>>>       ] 65/81, 5.1 task/s, elapsed: 13s, ETA:     3s[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 66/81, 5.2 task/s, elapsed: 13s, ETA:     3s[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 67/81, 5.2 task/s, elapsed: 13s, ETA:     3s[>>>>>>>>>>>>>>>>>>>>>>>>>>      ] 68/81, 5.2 task/s, elapsed: 13s, ETA:     2s[>>>>>>>>>>>>>>>>>>>>>>>>>>>     ] 69/81, 5.2 task/s, elapsed: 13s, ETA:     2s[>>>>>>>>>>>>>>>>>>>>>>>>>>>     ] 70/81, 5.3 task/s, elapsed: 13s, ETA:     2s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 71/81, 5.3 task/s, elapsed: 13s, ETA:     2s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 72/81, 5.3 task/s, elapsed: 14s, ETA:     2s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 73/81, 5.4 task/s, elapsed: 14s, ETA:     1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 74/81, 5.4 task/s, elapsed: 14s, ETA:     1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 75/81, 5.4 task/s, elapsed: 14s, ETA:     1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 76/81, 5.4 task/s, elapsed: 14s, ETA:     1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 77/81, 5.4 task/s, elapsed: 14s, ETA:     1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 78/81, 5.5 task/s, elapsed: 14s, ETA:     1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 79/81, 5.5 task/s, elapsed: 14s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 80/81, 5.5 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 81/81, 5.5 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 82/81, 5.5 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 83/81, 5.6 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 84/81, 5.6 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 85/81, 5.6 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 86/81, 5.6 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 87/81, 5.6 task/s, elapsed: 15s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 88/81, 5.7 task/s, elapsed: 16s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 89/81, 5.7 task/s, elapsed: 16s, ETA:     0s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 90/81, 5.7 task/s, elapsed: 16s, ETA:    -1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 91/81, 5.7 task/s, elapsed: 16s, ETA:    -1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 92/81, 5.7 task/s, elapsed: 16s, ETA:    -1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 93/81, 5.8 task/s, elapsed: 16s, ETA:    -1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 94/81, 5.8 task/s, elapsed: 16s, ETA:    -1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 95/81, 5.8 task/s, elapsed: 16s, ETA:    -1s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 96/81, 5.8 task/s, elapsed: 16s, ETA:    -2s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 97/81, 5.8 task/s, elapsed: 17s, ETA:    -2s[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 98/81, 5.9 task/s, elapsed: 17s, ETA:    -2s/usr/local/miniconda3/envs/fbocc/lib/python3.8/site-packages/torch/utils/checkpoint.py:25: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+
+writing results to $AD_ROOT/artifacts/day1/fbocc_test/results_miou.pkl
+
+Saving output and gt in test/fbocc-r50-cbgs_depth_16f_16x4_20e/Sat_Sep_26_11_59 for visualization.
+
+Starting Evaluation...
+  0%|          | 0/98 [00:00<?, ?it/s] 12%|█▏        | 12/98 [00:00<00:00, 116.73it/s] 24%|██▍       | 24/98 [00:00<00:00, 116.69it/s] 37%|███▋      | 36/98 [00:00<00:00, 116.80it/s] 49%|████▉     | 48/98 [00:00<00:00, 114.29it/s] 61%|██████    | 60/98 [00:00<00:00, 109.60it/s] 72%|███████▏  | 71/98 [00:00<00:00, 106.38it/s]100%|██████████| 98/98 [00:00<00:00, 134.09it/s]
+===> per class IoU of 81 samples:
+===> others - IoU = 32.8388
+===> barrier - IoU = nan
+===> bicycle - IoU = 13.8369
+===> bus - IoU = 31.6125
+===> car - IoU = 41.4084
+===> construction_vehicle - IoU = 0.0
+===> motorcycle - IoU = 25.1125
+===> pedestrian - IoU = 24.1286
+===> traffic_cone - IoU = 20.1327
+===> trailer - IoU = nan
+===> truck - IoU = 33.3819
+===> driveable_surface - IoU = 74.1118
+===> other_flat - IoU = 0.0
+===> sidewalk - IoU = 41.3764
+===> terrain - IoU = 39.72
+===> manmade - IoU = 49.6043
+===> vegetation - IoU = 39.5675
+===> mIoU of 81 samples: 31.12
+{'others': 32.84, 'barrier': nan, 'bicycle': 13.84, 'bus': 31.61, 'car': 41.41, 'construction_vehicle': 0.0, 'motorcycle': 25.11, 'pedestrian': 24.13, 'traffic_cone': 20.13, 'trailer': nan, 'truck': 33.38, 'driveable_surface': 74.11, 'other_flat': 0.0, 'sidewalk': 41.38, 'terrain': 39.72, 'manmade': 49.6, 'vegetation': 39.57, 'Overall': 31.12}
+===== compare viz =====
+results 98 from $AD_ROOT/artifacts/day1/fbocc_test/results_miou.pkl
+infos $AD_ROOT/data/nuscenes/nuscenes_infos_train.pkl 323
+sample_0 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.026792187243700027
+sample_1 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.02793281339108944
+sample_2 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.03117343783378601
+sample_3 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.033525001257658005
+sample_4 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.04254218935966492
+sample_5 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.04827968776226044
+sample_6 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.04912656173110008
+sample_7 pred (200, 200, 16) gt (200, 200, 16) disagree_rate 0.05185937508940697
+wrote 8 to $AD_ROOT/artifacts/day1/fbocc_test/viz_compare
+METRICS: writing results to $AD_ROOT/artifacts/day1/fbocc_test/results_miou.pkl
+METRICS: ===> per class IoU of 81 samples:
+METRICS: ===> others - IoU = 32.8388
+METRICS: ===> barrier - IoU = nan
+METRICS: ===> bicycle - IoU = 13.8369
+METRICS: ===> bus - IoU = 31.6125
+METRICS: ===> car - IoU = 41.4084
+METRICS: ===> construction_vehicle - IoU = 0.0
+METRICS: ===> motorcycle - IoU = 25.1125
+METRICS: ===> pedestrian - IoU = 24.1286
+METRICS: ===> traffic_cone - IoU = 20.1327
+METRICS: ===> trailer - IoU = nan
+METRICS: ===> truck - IoU = 33.3819
+METRICS: ===> driveable_surface - IoU = 74.1118
+METRICS: ===> other_flat - IoU = 0.0
+METRICS: ===> sidewalk - IoU = 41.3764
+METRICS: ===> terrain - IoU = 39.72
+METRICS: ===> manmade - IoU = 49.6043
+METRICS: ===> vegetation - IoU = 39.5675
+METRICS: ===> mIoU of 81 samples: 31.12
+per-sample iou field sample []
+COMPARE_VIZ_DONE
+FBOCC_MIOU_DONE

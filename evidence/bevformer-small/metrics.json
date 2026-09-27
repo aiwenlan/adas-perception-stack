@@ -1,0 +1,12 @@
+{
+  "model": "BEVFormer-small",
+  "dataset": "nuScenes v1.0-mini val",
+  "sample_count": 81,
+  "metrics": {"mAP": 0.3541, "NDS": 0.3989},
+  "evidence_level": "B",
+  "visualizations": [
+    "assets/det/bevformer_cams.png",
+    "assets/det/bevformer_bev.png",
+    "assets/det/bevformer_gt_vs_pred.png"
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="260" viewBox="0 0 880 260">
+  <rect width="880" height="260" fill="#f8fafc"/>
+  <style>.t{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#0f172a}.h{fill:#fff;font-weight:700;font-family:Segoe UI,Helvetica,Arial,sans-serif}.s{fill:#475569;font-size:12px;font-family:Segoe UI,Helvetica,Arial,sans-serif}</style>
+  <text x="24" y="32" class="t" style="font-size:18px;font-weight:700">UniAD task graph (architecture reference)</text>
+  <rect x="30" y="80" width="120" height="50" rx="8" fill="#1d4ed8"/><text x="48" y="110" class="h">Multi-cam</text>
+  <path d="M150 105 H180" stroke="#64748b" stroke-width="2"/>
+  <rect x="180" y="80" width="160" height="50" rx="8" fill="#4338ca"/><text x="195" y="110" class="h">BEV Backbone</text>
+  <path d="M340 105 H370" stroke="#64748b" stroke-width="2"/>
+  <rect x="370" y="50" width="120" height="45" rx="8" fill="#0f766e"/><text x="395" y="78" class="h">Track</text>
+  <rect x="370" y="110" width="120" height="45" rx="8" fill="#b45309"/><text x="400" y="138" class="h">Map</text>
+  <path d="M490 72 H520 V130 H560" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M490 132 H560" stroke="#64748b" stroke-width="2"/>
+  <rect x="560" y="80" width="120" height="50" rx="8" fill="#7c3aed"/><text x="575" y="110" class="h">Motion</text>
+  <path d="M680 105 H710" stroke="#64748b" stroke-width="2"/>
+  <rect x="710" y="80" width="130" height="50" rx="8" fill="#be123c"/><text x="730" y="110" class="h">Planning</text>
+  <text x="30" y="200" class="s">Same BEV backbone lineage as BEVFormer: shared BEV, differentiable multi-task heads.</text>
+  <text x="30" y="222" class="s">Tracking remains first-class. This package demos planning via VAD-tiny.</text>
+</svg>

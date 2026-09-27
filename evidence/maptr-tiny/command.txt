@@ -1,0 +1,7 @@
+conda activate maptr
+cd $AD_ROOT/repos/MapTR
+python tools/test.py \
+  projects/configs/maptr/maptr_tiny_r50_24e.py \
+  $AD_ROOT/ckpts/maptr/maptr_tiny_r50_24e.pth \
+  --eval chamfer \
+  --out $AD_ROOT/outputs/maptr/results.pkl

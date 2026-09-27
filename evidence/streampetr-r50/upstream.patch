@@ -1,0 +1,143 @@
+diff --git a/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_24e.py b/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_24e.py
+index cd1dce0..1348aa4 100644
+--- a/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_24e.py
++++ b/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_24e.py
+@@ -108,7 +108,7 @@ model = dict(
+                             num_heads=8,
+                             dropout=0.1),
+                         dict(
+-                            type='PETRMultiheadFlashAttention',
++                            type='PETRMultiheadAttention',
+                             embed_dims=256,
+                             num_heads=8,
+                             dropout=0.1),
+diff --git a/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_90e.py b/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_90e.py
+index 185b563..d316c0b 100644
+--- a/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_90e.py
++++ b/projects/configs/StreamPETR/stream_petr_r50_flash_704_bs2_seq_90e.py
+@@ -19,7 +19,7 @@ class_names = [
+ ]
+ 
+ num_gpus = 8
+-batch_size = 2
++batch_size = 1
+ num_iters_per_epoch = 28130 // (num_gpus * batch_size)
+ num_epochs = 90
+ 
+@@ -108,7 +108,7 @@ model = dict(
+                             num_heads=8,
+                             dropout=0.1),
+                         dict(
+-                            type='PETRMultiheadFlashAttention',
++                            type='PETRMultiheadAttention',
+                             embed_dims=256,
+                             num_heads=8,
+                             dropout=0.1),
+diff --git a/projects/mmdet3d_plugin/models/backbones/__init__.py b/projects/mmdet3d_plugin/models/backbones/__init__.py
+index 8154c9e..e50d7fb 100644
+--- a/projects/mmdet3d_plugin/models/backbones/__init__.py
++++ b/projects/mmdet3d_plugin/models/backbones/__init__.py
+@@ -1,10 +1,7 @@
+ # ------------------------------------------------------------------------
+-# Copyright (c) 2022 megvii-model. All Rights Reserved.
+-# ------------------------------------------------------------------------
+-# Modified from DETR3D (https://github.com/WangYueFt/detr3d)
+-# Copyright (c) 2021 Wang, Yue
+-# ------------------------------------------------------------------------
+ from .vovnet import VoVNet
+ from .vovnetcp import VoVNetCP
+-from .eva_vit import EVAViT
+-
++try:
++    from .eva_vit import EVAViT
++except ImportError:
++    EVAViT = None
+diff --git a/projects/mmdet3d_plugin/models/dense_heads/petr_head_dn.py b/projects/mmdet3d_plugin/models/dense_heads/petr_head_dn.py
+index aca82bd..21404c1 100644
+--- a/projects/mmdet3d_plugin/models/dense_heads/petr_head_dn.py
++++ b/projects/mmdet3d_plugin/models/dense_heads/petr_head_dn.py
+@@ -311,7 +311,7 @@ class PETRHeadDN(AnchorFreeHead):
+ 
+         coords = coords.unsqueeze(-1)
+ 
+-        img2lidars = data['lidar2img'].inverse()
++        img2lidars = torch.linalg.inv(data['lidar2img'].float().cpu()).to(data['lidar2img'].device).to(data['lidar2img'].dtype)
+         img2lidars = img2lidars.view(BN, 1, 1, 4, 4).repeat(1, H*W, D, 1, 1).view(B, LEN, D, 4, 4)
+         img2lidars = topk_gather(img2lidars, topk_indexes)
+ 
+diff --git a/projects/mmdet3d_plugin/models/dense_heads/streampetr_head.py b/projects/mmdet3d_plugin/models/dense_heads/streampetr_head.py
+index ed5a0ed..1dc35b2 100644
+--- a/projects/mmdet3d_plugin/models/dense_heads/streampetr_head.py
++++ b/projects/mmdet3d_plugin/models/dense_heads/streampetr_head.py
+@@ -400,7 +400,7 @@ class StreamPETRHead(AnchorFreeHead):
+ 
+         coords = coords.unsqueeze(-1)
+ 
+-        img2lidars = data['lidar2img'].inverse()
++        img2lidars = torch.linalg.inv(data['lidar2img'].float().cpu()).to(data['lidar2img'].device).to(data['lidar2img'].dtype)
+         img2lidars = img2lidars.view(BN, 1, 1, 4, 4).repeat(1, H*W, D, 1, 1).view(B, LEN, D, 4, 4)
+         img2lidars = topk_gather(img2lidars, topk_indexes)
+ 
+diff --git a/projects/mmdet3d_plugin/models/utils/attention.py b/projects/mmdet3d_plugin/models/utils/attention.py
+index 3559b65..a66bb1d 100644
+--- a/projects/mmdet3d_plugin/models/utils/attention.py
++++ b/projects/mmdet3d_plugin/models/utils/attention.py
+@@ -18,8 +18,17 @@ from einops import rearrange
+ from mmcv.runner import auto_fp16
+ from mmcv.runner.base_module import BaseModule
+ 
+-from flash_attn.flash_attn_interface import flash_attn_unpadded_kvpacked_func
+-from flash_attn.bert_padding import unpad_input, pad_input, index_first_axis
++try:
++    from flash_attn.flash_attn_interface import flash_attn_unpadded_kvpacked_func
++    from flash_attn.bert_padding import unpad_input, pad_input, index_first_axis
++except ImportError:  # optional; configs use PETRMultiheadAttention
++    flash_attn_unpadded_kvpacked_func = None
++    def unpad_input(*args, **kwargs):
++        raise ImportError('flash_attn not installed')
++    def pad_input(*args, **kwargs):
++        raise ImportError('flash_attn not installed')
++    def index_first_axis(*args, **kwargs):
++        raise ImportError('flash_attn not installed')
+ 
+ 
+ def _in_projection_packed(q, k, v, w, b = None):
+diff --git a/projects/mmdet3d_plugin/models/utils/misc.py b/projects/mmdet3d_plugin/models/utils/misc.py
+index df496df..e499d31 100644
+--- a/projects/mmdet3d_plugin/models/utils/misc.py
++++ b/projects/mmdet3d_plugin/models/utils/misc.py
+@@ -191,7 +191,7 @@ class MLN(nn.Module):
+ def transform_reference_points(reference_points, egopose, reverse=False, translation=True):
+     reference_points = torch.cat([reference_points, torch.ones_like(reference_points[..., 0:1])], dim=-1)
+     if reverse:
+-        matrix = egopose.inverse()
++        matrix = torch.linalg.inv(egopose.float().cpu()).to(egopose.device).to(egopose.dtype)
+     else:
+         matrix = egopose
+     if not translation:
+diff --git a/tools/test.py b/tools/test.py
+index d48206c..838e4e4 100755
+--- a/tools/test.py
++++ b/tools/test.py
+@@ -221,9 +221,8 @@ def main():
+         model.PALETTE = dataset.PALETTE
+ 
+     if not distributed:
+-        assert False
+-        # model = MMDataParallel(model, device_ids=[0])
+-        # outputs = single_gpu_test(model, data_loader, args.show, args.show_dir)
++        model = MMDataParallel(model, device_ids=[0])
++        outputs = single_gpu_test(model, data_loader, args.show, args.show_dir)
+     else:
+         model = MMDistributedDataParallel(
+             model.cuda(),
+@@ -236,8 +235,7 @@ def main():
+     if rank == 0:
+         if args.out:
+             print(f'\nwriting results to {args.out}')
+-            assert False
+-            #mmcv.dump(outputs['bbox_results'], args.out)
++            mmcv.dump(outputs, args.out)
+         kwargs = {} if args.eval_options is None else args.eval_options
+         kwargs['jsonfile_prefix'] = osp.join('test', args.config.split(
+             '/')[-1].split('.')[-2], time.ctime().replace(' ', '_').replace(':', '_'))

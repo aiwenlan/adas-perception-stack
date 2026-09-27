@@ -1,0 +1,250 @@
+Formating results & gts by classes
+results path: $AD_ROOT/repos/MapTR/test/maptr_tiny_r50_24e/Sat_Sep_26_06_48_56_2026/pts_bbox/nuscmap_results.json
+/usr/local/miniconda3/envs/maptr/lib/python3.8/site-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  ../aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/core/bbox/coders/nms_free_coder.py:236: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.post_center_range = torch.tensor(
+Formatting ...
+Cls data formatting done in 2.029755s!! with $AD_ROOT/repos/MapTR/test/maptr_tiny_r50_24e/Sat_Sep_26_06_48_56_2026/pts_bbox/cls_formatted.pkl
+-*-*-*-*-*-*-*-*-*-*use metric:chamfer-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*threshhold:0.5-*-*-*-*-*-*-*-*-*-*
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+cls:divider done in 1.035196s!!
+cls:ped_crossing done in 0.035383s!!
+cls:boundary done in 0.108425s!!
+
++--------------+-----+------+--------+-------+
+| class        | gts | dets | recall | ap    |
++--------------+-----+------+--------+-------+
+| divider      | 465 | 1809 | 0.744  | 0.639 |
+| ped_crossing | 76  | 429  | 0.618  | 0.487 |
+| boundary     | 287 | 1812 | 0.331  | 0.165 |
++--------------+-----+------+--------+-------+
+| mAP          |     |      |        | 0.430 |
++--------------+-----+------+--------+-------+
+-*-*-*-*-*-*-*-*-*-*threshhold:1.0-*-*-*-*-*-*-*-*-*-*
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+cls:divider done in 1.010885s!!
+cls:ped_crossing done in 0.041331s!!
+cls:boundary done in 0.122190s!!
+
++--------------+-----+------+--------+-------+
+| class        | gts | dets | recall | ap    |
++--------------+-----+------+--------+-------+
+| divider      | 465 | 1809 | 0.923  | 0.873 |
+| ped_crossing | 76  | 429  | 0.974  | 0.948 |
+| boundary     | 287 | 1812 | 0.728  | 0.639 |
++--------------+-----+------+--------+-------+
+| mAP          |     |      |        | 0.820 |
++--------------+-----+------+--------+-------+
+-*-*-*-*-*-*-*-*-*-*threshhold:1.5-*-*-*-*-*-*-*-*-*-*
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+  tree = STRtree(pred_lines_shapely)
+cls:divider done in 1.009655s!!
+cls:ped_crossing done in 0.034081s!!
+cls:boundary done in 0.107937s!!
+
++--------------+-----+------+--------+-------+
+| class        | gts | dets | recall | ap    |
++--------------+-----+------+--------+-------+
+| divider      | 465 | 1809 | 0.957  | 0.926 |
+| ped_crossing | 76  | 429  | 1.000  | 0.980 |
+| boundary     | 287 | 1812 | 0.850  | 0.760 |
++--------------+-----+------+--------+-------+
+| mAP          |     |      |        | 0.889 |
++--------------+-----+------+--------+-------+
+divider: 0.8124819000562032
+ped_crossing: 0.8049570620059967
+boundary: 0.5212676574786504
+map: 0.7129022065136169
+{'NuscMap_chamfer/divider_AP': 0.8124819000562032, 'NuscMap_chamfer/ped_crossing_AP': 0.8049570620059967, 'NuscMap_chamfer/boundary_AP': 0.5212676574786504, 'NuscMap_chamfer/mAP': 0.7129022065136169, 'NuscMap_chamfer/divider_AP_thr_0.5': 0.6389297842979431, 'NuscMap_chamfer/divider_AP_thr_1.0': 0.8725837469100952, 'NuscMap_chamfer/divider_AP_thr_1.5': 0.9259321689605713, 'NuscMap_chamfer/ped_crossing_AP_thr_0.5': 0.4865259826183319, 'NuscMap_chamfer/ped_crossing_AP_thr_1.0': 0.9480955004692078, 'NuscMap_chamfer/ped_crossing_AP_thr_1.5': 0.9802497029304504, 'NuscMap_chamfer/boundary_AP_thr_0.5': 0.16540159285068512, 'NuscMap_chamfer/boundary_AP_thr_1.0': 0.6387144327163696, 'NuscMap_chamfer/boundary_AP_thr_1.5': 0.7596869468688965}
+MAPTR_EVAL4_DONE
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+cls:divider done in 1.010885s!!
+cls:ped_crossing done in 0.041331s!!
+cls:boundary done in 0.122190s!!
+| divider      | 465 | 1809 | 0.923  | 0.873 |
+| ped_crossing | 76  | 429  | 0.974  | 0.948 |
+| boundary     | 287 | 1812 | 0.728  | 0.639 |
+| mAP          |     |      |        | 0.820 |
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+$AD_ROOT/repos/MapTR/projects/mmdet3d_plugin/datasets/map_utils/tpfp_chamfer.py:35: ShapelyDeprecationWarning: STRtree will be changed in 2.0.0 and will not be compatible with versions < 2.
+cls:divider done in 1.009655s!!
+cls:ped_crossing done in 0.034081s!!
+cls:boundary done in 0.107937s!!
+| divider      | 465 | 1809 | 0.957  | 0.926 |
+| ped_crossing | 76  | 429  | 1.000  | 0.980 |
+| boundary     | 287 | 1812 | 0.850  | 0.760 |
+| mAP          |     |      |        | 0.889 |
+divider: 0.8124819000562032
+ped_crossing: 0.8049570620059967
+boundary: 0.5212676574786504
+{'NuscMap_chamfer/divider_AP': 0.8124819000562032, 'NuscMap_chamfer/ped_crossing_AP': 0.8049570620059967, 'NuscMap_chamfer/boundary_AP': 0.5212676574786504, 'NuscMap_chamfer/mAP': 0.7129022065136169, 'NuscMap_chamfer/divider_AP_thr_0.5': 0.6389297842979431, 'NuscMap_chamfer/divider_AP_thr_1.0': 0.8725837469100952, 'NuscMap_chamfer/divider_AP_thr_1.5': 0.9259321689605713, 'NuscMap_chamfer/ped_crossing_AP_thr_0.5': 0.4865259826183319, 'NuscMap_chamfer/ped_crossing_AP_thr_1.0': 0.9480955004692078, 'NuscMap_chamfer/ped_crossing_AP_thr_1.5': 0.9802497029304504, 'NuscMap_chamfer/boundary_AP_thr_0.5': 0.16540159285068512, 'NuscMap_chamfer/boundary_AP_thr_1.0': 0.6387144327163696, 'NuscMap_chamfer/boundary_AP_thr_1.5': 0.7596869468688965}

@@ -1,0 +1,12 @@
+{
+  "model": "StreamPETR-R50",
+  "dataset": "nuScenes v1.0-mini val",
+  "sample_count": 81,
+  "metrics": {"mAP": 0.4370, "NDS": 0.4831},
+  "evidence_level": "B",
+  "visualizations": [
+    "assets/det/streampetr_cams.png",
+    "assets/det/streampetr_bev.png",
+    "assets/det/streampetr_gt_vs_pred.png"
+  ]
+}

@@ -1,0 +1,200 @@
+Trainable param: llama.layers.6.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.6.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.6.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.6.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.7.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.7.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.7.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.7.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.7.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.7.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.7.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.8.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.8.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.8.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.8.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.8.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.8.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.8.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.9.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.9.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.9.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.9.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.9.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.9.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.9.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.10.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.10.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.10.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.10.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.10.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.10.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.10.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.11.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.11.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.11.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.11.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.11.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.11.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.11.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.12.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.12.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.12.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.12.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.12.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.12.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.12.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.13.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.13.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.13.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.13.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.13.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.13.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.13.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.14.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.14.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.14.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.14.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.14.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.14.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.14.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.15.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.15.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.15.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.15.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.15.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.15.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.15.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.16.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.16.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.16.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.16.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.16.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.16.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.16.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.17.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.17.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.17.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.17.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.17.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.17.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.17.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.18.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.18.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.18.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.18.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.18.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.18.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.18.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.19.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.19.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.19.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.19.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.19.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.19.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.19.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.20.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.20.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.20.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.20.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.20.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.20.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.20.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.21.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.21.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.21.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.21.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.21.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.21.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.21.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.22.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.22.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.22.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.22.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.22.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.22.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.22.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.23.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.23.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.23.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.23.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.23.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.23.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.23.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.24.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.24.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.24.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.24.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.24.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.24.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.24.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.25.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.25.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.25.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.25.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.25.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.25.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.25.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.26.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.26.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.26.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.26.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.26.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.26.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.26.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.27.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.27.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.27.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.27.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.27.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.27.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.27.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.28.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.28.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.28.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.28.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.28.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.28.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.28.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.29.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.29.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.29.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.29.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.29.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.29.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.29.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.30.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.30.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.30.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.30.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.30.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.30.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.30.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.31.attention.wq.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.31.attention.wo.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.31.feed_forward.w1.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.31.feed_forward.w2.bias, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.31.feed_forward.w3.bias, torch.Size([11008]), torch.float32
+Trainable param: llama.layers.31.attention_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.layers.31.ffn_norm.weight, torch.Size([4096]), torch.float32
+Trainable param: llama.norm.weight, torch.Size([4096]), torch.float32
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:03<00:29,  3.30s/it] 20%|██        | 2/10 [00:04<00:14,  1.79s/it] 30%|███       | 3/10 [00:07<00:18,  2.57s/it] 40%|████      | 4/10 [00:08<00:10,  1.82s/it] 50%|█████     | 5/10 [00:11<00:11,  2.29s/it] 60%|██████    | 6/10 [00:12<00:07,  1.75s/it] 70%|███████   | 7/10 [00:12<00:04,  1.40s/it] 80%|████████  | 8/10 [00:13<00:02,  1.18s/it] 90%|█████████ | 9/10 [00:14<00:01,  1.04s/it]100%|██████████| 10/10 [00:19<00:00,  2.22s/it]100%|██████████| 10/10 [00:19<00:00,  1.92s/it]
+Thread 0: Result - In the current scene, there are several cars parked in a parking lot, with some cars parked in the shade of a tree. The parking lot is located near a building, and there are also some people visible in the scene.
+Thread 0: Result - Yes, the ego vehicle is on a road, parked in a parking lot.
+Thread 0: Result - The ego vehicle should pay attention to the other cars parked in the parking lot, as well as the traffic light ahead. The traffic light is located on the left side of the road, and it is important for the ego vehicle to follow the traffic rules and regulations to ensure safe driving. Additionally, the ego vehicle should be aware of the other cars in the parking lot, as they might be backing out or moving around, which could affect the ego vehicle's path.
+Thread 0: Result - Yes, there is a vehicle visible in the front camera view, which is a car.
+Thread 0: Result - The image shows a busy street with several cars parked along the side of the road. There are at least 10 cars parked in the area, with some parked closer to the curb and others further back. The street appears to be a residential area, as there are trees and a building visible in the background. The presence of cars parked along the street indicates that it is a common parking spot for residents or visitors to the area.
+Thread 0: Result - Yes, the ego vehicle should stop immediately when it encounters a red traffic light.
+Thread 0: Result - The camera views provided are a front view and a side view of the parking lot.
+Thread 0: Result - No, this is an outdoor scene, as the cars are parked on the street.
+Thread 0: Result - The weather in the image is sunny, which suggests that it is a pleasant day.
+Thread 0: Result - One safe driving action is to always be aware of your surroundings, including other vehicles, pedestrians, and potential hazards. In the image, there are several cars parked in a parking lot, and a person is walking nearby. It is essential to maintain a safe distance from other vehicles and pedestrians, especially when parking or maneuvering in a crowded area. Additionally, it is crucial to be cautious of blind spots, check mirrors, and use turn signals to communicate your intentions to other drivers and pedestrians. By practicing these safe driving actions, you can help prevent accidents and ensure a safer driving environment for everyone.
+Thread 0 finished
+DRIVELM_LLAMA1_DEMO_DONE
+n 10
+0 In the current scene, there are several cars parked in a parking lot, with some cars parked in the shade of a tree. The parking lot is located near a building, and there are also some people visible in the scene.
+1 Yes, the ego vehicle is on a road, parked in a parking lot.
+2 The ego vehicle should pay attention to the other cars parked in the parking lot, as well as the traffic light ahead. The traffic light is located on the left side of the road, and it is important for the ego vehicle to 
+3 Yes, there is a vehicle visible in the front camera view, which is a car.
+4 The image shows a busy street with several cars parked along the side of the road. There are at least 10 cars parked in the area, with some parked closer to the curb and others further back. The street appears to be a re
+empty 0 / 10

@@ -1,0 +1,13 @@
+{
+  "model": "CenterPoint-voxel0.1",
+  "dataset": "nuScenes v1.0-mini val",
+  "sample_count": 81,
+  "metrics": {"mAP": 0.5196, "NDS": 0.5494},
+  "evidence_level": "B",
+  "note": "OpenMMLab voxel 0.1; not BEVFusion lidar-only row",
+  "visualizations": [
+    "assets/det/centerpoint_cams.png",
+    "assets/det/centerpoint_bev.png",
+    "assets/det/centerpoint_gt_vs_pred.png"
+  ]
+}

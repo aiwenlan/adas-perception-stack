@@ -1,0 +1,8 @@
+{
+  "model": "MapTR-tiny",
+  "dataset": "nuScenes v1.0-mini",
+  "metrics": {"chamfer_mAP": 0.7129},
+  "evidence_level": "B",
+  "visualizations": ["assets/maptr/maptr_showcase.png"],
+  "viz_note": "vectors transformed LIDAR_TOP → ego before plot(-y,x)"
+}

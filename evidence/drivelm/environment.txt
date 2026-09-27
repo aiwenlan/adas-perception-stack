@@ -1,0 +1,11 @@
+conda_env: drivevla
+date_utc: 2026-09-27T11:32:32Z
+hostname: REDACTED
+uname: Linux 5.15.0-113-generic x86_64
+gpu: NVIDIA GeForce RTX 4090, 595.80, 24564 MiB
+python: 3.10.21
+torch: 2.1.2+cu118 cuda 11.8
+mmcv: 1.7.2
+mmdet: 2.26.0
+mmdet3d: 1.0.0rc6
+mmseg: 0.29.1

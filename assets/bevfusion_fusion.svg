@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340">
+  <rect width="880" height="340" fill="#f8fafc"/>
+  <style>.t{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#0f172a}.h{fill:#fff;font-weight:700;font-family:Segoe UI,Helvetica,Arial,sans-serif}.s{fill:#475569;font-size:12px;font-family:Segoe UI,Helvetica,Arial,sans-serif}</style>
+  <text x="24" y="32" class="t" style="font-size:18px;font-weight:700">BEVFusion：为何在 BEV 空间融合</text>
+  <rect x="40" y="70" width="180" height="60" rx="10" fill="#0284c7"/><text x="70" y="105" class="h">Camera</text>
+  <rect x="40" y="180" width="180" height="60" rx="10" fill="#0f766e"/><text x="80" y="215" class="h">LiDAR</text>
+  <path d="M220 100 H280" stroke="#64748b" stroke-width="2"/><path d="M220 210 H280" stroke="#64748b" stroke-width="2"/>
+  <rect x="280" y="70" width="200" height="60" rx="10" fill="#0369a1"/><text x="300" y="105" class="h">View Transform→BEV</text>
+  <rect x="280" y="180" width="200" height="60" rx="10" fill="#115e59"/><text x="310" y="215" class="h">Voxel→BEV</text>
+  <path d="M480 100 H530 V160 H560" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M480 210 H530 V180 H560" stroke="#64748b" stroke-width="2" fill="none"/>
+  <rect x="560" y="130" width="140" height="70" rx="10" fill="#7c2d12"/><text x="595" y="170" class="h">Fusion</text>
+  <path d="M700 165 H740" stroke="#64748b" stroke-width="2"/>
+  <rect x="740" y="130" width="110" height="70" rx="10" fill="#9f1239"/><text x="760" y="170" class="h">Det Head</text>
+  <text x="40" y="290" class="s">Shared metric plane. Mini: lidar-only 0.542/0.566 → fusion 0.573/0.580.</text>
+</svg>

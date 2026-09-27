@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300">
+  <rect width="920" height="300" fill="#f8fafc"/>
+  <style>.t{font-family:Segoe UI,Helvetica,Arial,sans-serif;fill:#0f172a}.h{fill:#fff;font-weight:700;font-family:Segoe UI,Helvetica,Arial,sans-serif}.s{fill:#475569;font-size:12px;font-family:Segoe UI,Helvetica,Arial,sans-serif}</style>
+  <text x="24" y="32" class="t" style="font-size:18px;font-weight:700">DriveLM (VLM) vs VLA — where the stack stops</text>
+  <rect x="30" y="70" width="130" height="50" rx="8" fill="#0369a1"/><text x="50" y="100" class="h">Cameras</text>
+  <path d="M160 95 H190" stroke="#64748b" stroke-width="2"/>
+  <rect x="190" y="70" width="150" height="50" rx="8" fill="#4f46e5"/><text x="210" y="100" class="h">Vision Enc</text>
+  <path d="M340 95 H370" stroke="#64748b" stroke-width="2"/>
+  <rect x="370" y="70" width="180" height="50" rx="8" fill="#7c3aed"/><text x="390" y="100" class="h">Adapter+LLaMA</text>
+  <path d="M550 95 H580" stroke="#64748b" stroke-width="2"/>
+  <rect x="580" y="70" width="140" height="50" rx="8" fill="#059669"/><text x="605" y="100" class="h">QA Answer</text>
+  <text x="30" y="150" class="s">DriveLM / Graph VQA: language answers, not vehicle control.</text>
+  <rect x="30" y="190" width="130" height="50" rx="8" fill="#0369a1"/><text x="50" y="220" class="h">Cameras</text>
+  <path d="M160 215 H190" stroke="#64748b" stroke-width="2"/>
+  <rect x="190" y="190" width="120" height="50" rx="8" fill="#b45309"/><text x="210" y="220" class="h">OCC 3D</text>
+  <path d="M310 215 H340" stroke="#64748b" stroke-width="2"/>
+  <rect x="340" y="190" width="150" height="50" rx="8" fill="#7c3aed"/><text x="360" y="220" class="h">LLM Reason</text>
+  <path d="M490 215 H520" stroke="#64748b" stroke-width="2"/>
+  <rect x="520" y="190" width="180" height="50" rx="8" fill="#be123c"/><text x="540" y="220" class="h">Trajectory/Action</text>
+  <text x="30" y="270" class="s">OccVLA-style: occupancy supplies 3D structure, then action grounding to trajectory.</text>
+</svg>

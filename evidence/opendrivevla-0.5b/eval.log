@@ -1,0 +1,56 @@
+===== Sat Sep 26 13:10:46 UTC 2026 build cache + infer =====
+data/infos/:
+total 8328
+drwxr-xr-x 2 root root    4096 Sep 26 12:23 .
+drwxr-xr-x 4 root root    4096 Sep 26 12:20 ..
+-rw-r--r-- 1 root root 6650632 Sep 26 12:45 nuscenes_infos_temporal_train.pkl
+-rw-r--r-- 1 root root 1867181 Sep 26 13:10 nuscenes_infos_temporal_val.pkl
+
+data/nuscenes/:
+total 32
+drwxr-xr-x 2 root root 4096 Sep 26 13:10 .
+drwxr-xr-x 4 root root 4096 Sep 26 12:20 ..
+lrwxrwxrwx 1 root root   73 Sep 26 13:10 can_bus -> $AD_ROOT/repos/BEVFormer/data/can_bus
+lrwxrwxrwx 1 root root   63 Sep 26 13:10 maps -> $AD_ROOT/data/nuscenes/maps
+lrwxrwxrwx 1 root root   66 Sep 26 13:10 samples -> $AD_ROOT/data/nuscenes/samples
+lrwxrwxrwx 1 root root   65 Sep 26 13:10 sweeps -> $AD_ROOT/data/nuscenes/sweeps
+lrwxrwxrwx 1 root root   68 Sep 26 13:10 v1.0-mini -> $AD_ROOT/data/nuscenes/v1.0-mini
+lrwxrwxrwx 1 root root   68 Sep 26 13:10 v1.0-trainval -> $AD_ROOT/data/nuscenes/v1.0-mini
+building cache for 81 val tokens
+wrote data/nuscenes/cached_nuscenes_info.pkl n= 81
+shapes {'gt_ego_his_trajs': (5, 2), 'gt_ego_his_diff': (4, 2), 'gt_ego_fut_trajs': (7, 2), 'gt_ego_fut_diff': (6, 2), 'gt_ego_fut_cmd': (3,), 'gt_ego_lcf_feat': (9,)}
+fut[1..6] ok True
+his[0..3] ok True
+his_diff (4, 2)
+torch 2.1.2+cu118 cuda True
+mmcv 1.7.2 mmdet3d 1.0.0rc6
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/mmcv/ops/__init__.py", line 10, in <module>
+    from .carafe import CARAFE, CARAFENaive, CARAFEPack, carafe, carafe_naive
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/mmcv/ops/carafe.py", line 11, in <module>
+    from ..cnn import UPSAMPLE_LAYERS, normal_init, xavier_init
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/mmcv/cnn/__init__.py", line 14, in <module>
+    from .builder import MODELS, build_model_from_cfg
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/mmcv/cnn/builder.py", line 2, in <module>
+    from ..runner import Sequential
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/mmcv/runner/__init__.py", line 3, in <module>
+    from .base_runner import BaseRunner
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/mmcv/runner/base_runner.py", line 17, in <module>
+    from .checkpoint import load_checkpoint
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/mmcv/runner/checkpoint.py", line 17, in <module>
+    import torchvision
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/torchvision/__init__.py", line 6, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/torchvision/models/convnext.py", line 8, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/torchvision/ops/__init__.py", line 1, in <module>
+    from ._register_onnx_ops import _register_custom_op
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/torchvision/ops/_register_onnx_ops.py", line 5, in <module>
+    from torch.onnx import symbolic_opset11 as opset11
+  File "/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/torch/onnx/__init__.py", line 46, in <module>
+    from ._internal.exporter import (  # usort:skip. needs to be last to avoid circular import
+ImportError: cannot import name 'ExportOptions' from 'torch.onnx._internal.exporter' (/usr/local/miniconda3/envs/drivevla/lib/python3.10/site-packages/torch/onnx/_internal/exporter/__init__.py)
+$AD_ROOT/scripts/run_opendrivevla_mini.sh: line 230: PYTHONPATH: unbound variable

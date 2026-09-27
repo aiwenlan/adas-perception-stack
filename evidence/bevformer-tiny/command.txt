@@ -1,0 +1,6 @@
+conda activate bevformer
+cd $AD_ROOT/repos/BEVFormer
+python tools/test.py \
+  projects/configs/bevformer/bevformer_tiny.py \
+  $AD_ROOT/ckpts/bevformer/bevformer_tiny_epoch_24.pth \
+  --eval bbox

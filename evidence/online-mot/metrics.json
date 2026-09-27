@@ -1,0 +1,18 @@
+{
+  "model": "Online-3D-MOT + E2E-live",
+  "dataset": "nuScenes mini",
+  "replay": {"scenes": "mini-val", "frames": 81},
+  "e2e_live": {
+    "scenes": 10,
+    "frames_timed": 402,
+    "total_ms_mean": 910.72,
+    "approx_fps": 1.1
+  },
+  "evidence_level": "B",
+  "visualizations": [
+    "assets/tracking/tracking_online_lidar.mp4",
+    "assets/tracking/tracking_online_lidar_cam.mp4",
+    "assets/tracking/tracking_e2e_live_long_all.mp4"
+  ],
+  "note": "custom KF+NN tracker; not nuScenes tracking challenge AMOTA"
+}

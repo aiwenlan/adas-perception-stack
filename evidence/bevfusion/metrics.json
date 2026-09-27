@@ -1,0 +1,15 @@
+{
+  "model": "BEVFusion",
+  "dataset": "nuScenes v1.0-mini val",
+  "sample_count": 81,
+  "metrics": {
+    "lidar_only": {"mAP": 0.5424, "NDS": 0.5655},
+    "camera_lidar": {"mAP": 0.5727, "NDS": 0.5798}
+  },
+  "evidence_level": "B",
+  "visualizations": [
+    "assets/det/bevfusion_cams.png",
+    "assets/det/bevfusion_bev.png",
+    "assets/det/bevfusion_gt_vs_pred.png"
+  ]
+}

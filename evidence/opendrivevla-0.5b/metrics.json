@@ -1,0 +1,8 @@
+{
+  "model": "OpenDriveVLA-0.5B",
+  "dataset": "nuScenes mini (4 samples)",
+  "metrics": {"demo_samples": 4},
+  "evidence_level": "C",
+  "visualizations": ["assets/opendrivevla/opendrivevla_mini_showcase.png"],
+  "traj_convention": "cache columns (lateral, forward); plot as-is for ↑forward"
+}

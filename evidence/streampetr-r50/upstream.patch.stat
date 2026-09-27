@@ -1,0 +1,9 @@
+ .../StreamPETR/stream_petr_r50_flash_704_bs2_seq_24e.py     |  2 +-
+ .../StreamPETR/stream_petr_r50_flash_704_bs2_seq_90e.py     |  4 ++--
+ projects/mmdet3d_plugin/models/backbones/__init__.py        | 11 ++++-------
+ projects/mmdet3d_plugin/models/dense_heads/petr_head_dn.py  |  2 +-
+ .../mmdet3d_plugin/models/dense_heads/streampetr_head.py    |  2 +-
+ projects/mmdet3d_plugin/models/utils/attention.py           | 13 +++++++++++--
+ projects/mmdet3d_plugin/models/utils/misc.py                |  2 +-
+ tools/test.py                                               |  8 +++-----
+ 8 files changed, 24 insertions(+), 20 deletions(-)

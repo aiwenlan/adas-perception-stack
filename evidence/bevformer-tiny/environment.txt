@@ -1,0 +1,11 @@
+conda_env: bevformer
+date_utc: 2026-09-27T11:31:44Z
+hostname: REDACTED
+uname: Linux 5.15.0-113-generic x86_64
+gpu: NVIDIA GeForce RTX 4090, 595.80, 24564 MiB
+python: 3.8.20
+torch: 1.9.1+cu111 cuda 11.1
+mmcv: 1.4.0
+mmdet: 2.14.0
+mmdet3d: 0.17.1
+mmseg: 0.14.1

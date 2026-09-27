@@ -1,0 +1,7 @@
+conda activate vad   # or project env used for VAD
+cd $AD_ROOT/repos/VAD
+python tools/test.py \
+  projects/configs/VAD/VAD_tiny_e2e.py \
+  $AD_ROOT/ckpts/vad/VAD_tiny.pth \
+  --eval bbox \
+  --out $AD_ROOT/outputs/vad/results.pkl

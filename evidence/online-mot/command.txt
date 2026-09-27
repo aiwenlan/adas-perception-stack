@@ -1,0 +1,5 @@
+# replay (pkl) — run from this repo's scripts/
+python scripts/online_lidar_mot.py --root $AD_ROOT --scenes val --max-frames 0 --tag long_val
+python scripts/online_dual_mot.py --root $AD_ROOT --scenes val --max-frames 0 --tag long_val
+# live E2E
+python scripts/online_e2e_dual_mot.py --root $AD_ROOT --scenes all --max-frames 0 --tag long_all

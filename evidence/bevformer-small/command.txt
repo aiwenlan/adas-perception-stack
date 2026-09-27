@@ -1,0 +1,8 @@
+conda activate bevformer
+cd $AD_ROOT/repos/BEVFormer
+export PYTHONPATH=$PWD:${PYTHONPATH:-}
+python tools/test.py \
+  projects/configs/bevformer/bevformer_small.py \
+  $AD_ROOT/ckpts/bevformer/bevformer_small_epoch_24.pth \
+  --eval bbox \
+  2>&1 | tee $AD_ROOT/outputs/bevformer-small/eval.log

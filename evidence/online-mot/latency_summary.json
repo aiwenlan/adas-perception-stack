@@ -1,0 +1,39 @@
+{
+  "scenes": [
+    "scene-0061",
+    "scene-0103",
+    "scene-0553",
+    "scene-0655",
+    "scene-0757",
+    "scene-0796",
+    "scene-0916",
+    "scene-1077",
+    "scene-1094",
+    "scene-1100"
+  ],
+  "tag": "long_all",
+  "n_frames": 402,
+  "note": "same-process live GPU infer CP+SP+DualTracker; 4090; mini ALL 10 scenes",
+  "mini_all": true,
+  "cp_ms": {
+    "mean": 208.5,
+    "p50": 207.65,
+    "p95": 248.5
+  },
+  "sp_ms": {
+    "mean": 625.67,
+    "p50": 624.05,
+    "p95": 716.07
+  },
+  "track_ms": {
+    "mean": 6.55,
+    "p50": 3.3,
+    "p95": 21.09
+  },
+  "total_ms": {
+    "mean": 910.72,
+    "p50": 909.25,
+    "p95": 1019.94
+  },
+  "approx_fps": 1.1
+}

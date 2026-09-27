@@ -1,0 +1,52 @@
+[
+    {
+        "id": "mini_sample_0",
+        "question": "<image>\nWhat are the important objects in the current scene?",
+        "answer": "In the current scene, there are several cars parked in a parking lot, with some cars parked in the shade of a tree. The parking lot is located near a building, and there are also some people visible in the scene."
+    },
+    {
+        "id": "mini_sample_1",
+        "question": "<image>\nIs the ego vehicle on a road?",
+        "answer": "Yes, the ego vehicle is on a road, parked in a parking lot."
+    },
+    {
+        "id": "mini_sample_2",
+        "question": "<image>\nWhat should the ego vehicle pay attention to ahead?",
+        "answer": "The ego vehicle should pay attention to the other cars parked in the parking lot, as well as the traffic light ahead. The traffic light is located on the left side of the road, and it is important for the ego vehicle to follow the traffic rules and regulations to ensure safe driving. Additionally, the ego vehicle should be aware of the other cars in the parking lot, as they might be backing out or moving around, which could affect the ego vehicle's path."
+    },
+    {
+        "id": "mini_sample_3",
+        "question": "<image>\nIs there a vehicle visible in the front camera view?",
+        "answer": "Yes, there is a vehicle visible in the front camera view, which is a car."
+    },
+    {
+        "id": "mini_sample_4",
+        "question": "<image>\nDescribe the driving scene briefly.",
+        "answer": "The image shows a busy street with several cars parked along the side of the road. There are at least 10 cars parked in the area, with some parked closer to the curb and others further back. The street appears to be a residential area, as there are trees and a building visible in the background. The presence of cars parked along the street indicates that it is a common parking spot for residents or visitors to the area."
+    },
+    {
+        "id": "mini_sample_5",
+        "question": "<image>\nShould the ego vehicle stop immediately?",
+        "answer": "Yes, the ego vehicle should stop immediately when it encounters a red traffic light."
+    },
+    {
+        "id": "mini_sample_6",
+        "question": "<image>\nWhat camera views are provided?",
+        "answer": "The camera views provided are a front view and a side view of the parking lot."
+    },
+    {
+        "id": "mini_sample_7",
+        "question": "<image>\nIs this an indoor scene?",
+        "answer": "No, this is an outdoor scene, as the cars are parked on the street."
+    },
+    {
+        "id": "mini_sample_8",
+        "question": "<image>\nWhat is the weather roughly like?",
+        "answer": "The weather in the image is sunny, which suggests that it is a pleasant day."
+    },
+    {
+        "id": "mini_sample_9",
+        "question": "<image>\nGive one safe driving action.",
+        "answer": "One safe driving action is to always be aware of your surroundings, including other vehicles, pedestrians, and potential hazards. In the image, there are several cars parked in a parking lot, and a person is walking nearby. It is essential to maintain a safe distance from other vehicles and pedestrians, especially when parking or maneuvering in a crowded area. Additionally, it is crucial to be cautious of blind spots, check mirrors, and use turn signals to communicate your intentions to other drivers and pedestrians. By practicing these safe driving actions, you can help prevent accidents and ensure a safer driving environment for everyone."
+    }
+]

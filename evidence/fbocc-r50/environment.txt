@@ -1,0 +1,11 @@
+conda_env: fbocc
+date_utc: 2026-09-27T11:32:03Z
+hostname: REDACTED
+uname: Linux 5.15.0-113-generic x86_64
+gpu: NVIDIA GeForce RTX 4090, 595.80, 24564 MiB
+python: 3.8.20
+torch: 1.12.0+cu113 cuda 11.3
+mmcv: 1.5.2
+mmdet: 2.24.0
+mmdet3d: 1.0.0rc4
+mmseg: 0.24.0
