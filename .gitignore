@@ -1,0 +1,39 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Credentials / local account state
+.env
+.env.*
+*_token.txt
+*_tok.txt
+*credentials*.json
+*cookies*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Large / local-only
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+data/
+outputs/
+results/
+*.pkl
+!assets/**/*.png
+!assets/**/*.svg
+!assets/**/*.mp4
+!assets/**/*.jsonl
+
+# Logs
+*.log
+!evidence/**/*.log
